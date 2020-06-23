@@ -1,8 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Search Dropdown
+Search Dropdown is a wrapper of the original [Autocomplete](https://material-ui.com/components/autocomplete/) component of React [Material-UI](https://material-ui.com/)
 
-## Available Scripts
+## How it differs from the original Autocomplete
+`Search Dropdown` was developed as an extension to the original Autocomplete to make it easy to provide search and pagination support via API instead of querying and paginating static data on client side. Some features that this wrapper component provides are:
+* Loading Progress
+* Pagination Support
+* Search Support
 
-In the project directory, you can run:
+## Project structure
+
+```
+|-- README.md
+|-- package.json
+|-- public
+|   |-- favicon.ico
+|   |-- index.html
+|   |-- logo192.png
+|   |-- logo512.png
+|   |-- manifest.json
+|   `-- robots.txt
+|-- src
+|   |-- App.css
+|   |-- App.js
+|   |-- App.test.js
+|   |-- components
+|   |   |-- CitySelect.js
+|   |   |-- CountrySelect.js
+|   |   |-- DegreeDropdown.js
+|   |   |-- InterestsDropdown.js
+|   |   |-- ProfessionDropdown.js
+|   |   |-- SearchDropdown.js           <--- The main component
+|   |   |-- SkillsDropdown.js
+|   |   `-- StudyFieldsDropdown.js
+|   |-- index.css
+|   |-- index.js
+|   |-- logo.svg
+|   |-- serviceWorker.js
+|   `-- setupTests.js
+`-- yarn.lock
+```
+
+This repo contains come examples of components that were made using this SearchDropdown. This allowed us to strip away most of the pagination and filteration logic into one component and just build new components right on top of it.
+The API calls in all these components has been commented out because those were project specific, but to reuse these components, all you'd have to do is replace those API calls with yours, and it'll work just fine.
+
+## Development
 
 ### `yarn start`
 
